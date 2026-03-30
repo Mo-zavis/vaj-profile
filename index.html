@@ -420,7 +420,8 @@
         <strong>Zangro</strong> — hyperlocal food delivery before the market
         existed (2014). Built and scaled <strong>Almora.io</strong> — blockchain
         and crypto services (2018). Led product at <strong>Zone.game</strong>
-        (2021). Ran <strong>XTZ Esports</strong> as COO. Plays Valorant, League
+        (2021). Built <strong>WebHash</strong> — decentralized websites on Web3.
+        Ran <strong>XTZ Esports</strong> as COO. Plays Valorant, League
         of Legends, and PUBG with the same intensity he builds companies.
       </p>
 
@@ -481,8 +482,10 @@
         <span class="ilogo"><span class="ilogo-name">Almora.io</span></span>
         2018. Led product at
         <span class="ilogo"><img src="Logos/zone%20logo%201.png" alt="Zone.game"></span>
-        Zone.game &mdash; competitive gaming meets real stakes, 2021. Ran
-        operations, tournaments, and sponsor pipelines as COO of
+        Zone.game &mdash; competitive gaming meets real stakes, 2021. Built
+        decentralized websites on
+        <span class="ilogo"><img src="Logos/Webhash%20Logo.png" alt="WebHash"></span>
+        WebHash. Ran operations, tournaments, and sponsor pipelines as COO of
         <span class="ilogo"><span class="ilogo-name">XTZ Esports</span></span>
         &mdash; always shipping before the hype cycle. Now building
         <span class="ilogo"><span class="ilogo-name">Zavis.ai</span></span>
@@ -566,6 +569,7 @@ const LAPTOP_FRAME = [
   '   │    drwxr  <span class="ah">zangro/</span>       2014    <span class="ag">✓ shipped</span>  │',
   '   │    drwxr  <span class="ah">almora.io/</span>    2018    <span class="ag">✓ shipped</span>  │',
   '   │    drwxr  <span class="ah">zone.game/</span>    2021    <span class="ag">✓ shipped</span>  │',
+  '   │    drwxr  <span class="ah">webhash/</span>      Web3    <span class="ag">✓ shipped</span>  │',
   '   │    drwxr  <span class="ah">xtz-esports/</span>  COO     <span class="ag">✓ shipped</span>  │',
   '   │    drwxr  <span class="ah">zavis.ai/</span>     2025    <span class="ag">▸ active</span>  │',
   '   │                                            │',
@@ -596,7 +600,7 @@ let laptopFrame = 0;
 function renderLaptop() {
   const bar = BAR_STATES[laptopFrame % BAR_STATES.length];
   const lines = LAPTOP_FRAME.map((l, i) => {
-    if (i === 14) return '   │    ' + bar + '│';
+    if (i === 15) return '   │    ' + bar + '│';
     return l;
   });
   laptopEl.innerHTML = lines.join('\n');
